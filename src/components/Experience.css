@@ -1,0 +1,49 @@
+#experience {
+  padding-top: 0;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 28px;
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+
+.job:first-child {
+  border-top: none;
+}
+
+.job .w {
+  color: var(--mut);
+  font: 500 0.88rem var(--m);
+}
+
+.job h3 {
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.job .o {
+  color: var(--mut);
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.job ul {
+  margin: 0;
+  padding-left: 1.1em;
+  color: var(--ink);
+}
+
+.job li {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 860px) {
+  .job {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}

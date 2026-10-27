@@ -1,0 +1,35 @@
+#testimonials {
+  padding-top: 0;
+}
+
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+blockquote {
+  margin: 0;
+  padding: 26px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+blockquote p {
+  font-size: 1.05rem;
+  color: var(--ink);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+blockquote footer {
+  color: var(--mut);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 860px) {
+  .quotes {
+    grid-template-columns: 1fr;
+  }
+}

@@ -103,8 +103,8 @@ const Projects = () => {
                       ))}
                     </div>
                     <div className="links">
-                      <a href="#">Live</a>
-                      <a href="#">Source</a>
+                      <a href={project.live || '#projects'} target={project.live ? '_blank' : '_self'} rel="noreferrer">Live</a>
+                      <a href={project.source || '#projects'} target={project.source ? '_blank' : '_self'} rel="noreferrer">Source</a>
                     </div>
                   </article>
                 ))}

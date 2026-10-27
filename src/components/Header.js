@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 
 const Header = ({ darkMode, toggleDarkMode }) => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
@@ -30,7 +29,6 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setMobileMenuOpen(false);
       setActiveSection(sectionId);
     }
   };

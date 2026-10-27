@@ -13,7 +13,7 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="wrap">
         <div>
-          <div className="tag">// platform & software developers</div>
+          <div className="tag">{'// platform & software developers'}</div>
           <h1>Building platforms that <em>work</em> and scale</h1>
           <p className="lead">
             I design and ship robust software solutions from backend architecture to
